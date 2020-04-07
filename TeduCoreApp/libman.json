@@ -1,0 +1,54 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "nprogress@0.2.0",
+      "destination": "wwwroot/lib/nprogress/"
+    },
+    {
+      "library": "animate.css@3.7.2",
+      "destination": "wwwroot/lib/animate.css/"
+    },
+    //{
+    //  "library": "notify.js@3.0.0",
+    //  "destination": "wwwroot/lib/notify.js/"
+    //},
+    {
+      "library": "jquery@3.4.1",
+      "destination": "wwwroot/lib/jquery/"
+    },
+    {
+      "library": "jquery-validate@1.19.1",
+      "destination": "wwwroot/lib/jquery-validate/"
+    },
+    {
+      "library": "mustache.js@3.1.0",
+      "destination": "wwwroot/lib/mustache.js/"
+    },
+    {
+      "library": "twbs-pagination@1.4.2",
+      "destination": "wwwroot/lib/twbs-pagination/"
+    },
+    {
+      "library": "jquery-treegrid@0.2.0",
+      "destination": "wwwroot/lib/jquery-treegrid/"
+    },
+    {
+      "library": "bootstrap-datepicker@1.9.0",
+      "destination": "wwwroot/lib/bootstrap-datepicker/"
+    },
+    {
+      "library": "jquery-validation-unobtrusive@3.2.11",
+      "destination": "wwwroot/lib/jquery-validation-unobtrusive/"
+    },
+    {
+      "library": "flot@0.8.3",
+      "destination": "wwwroot/lib/flot/"
+    },
+    {
+      "library": "gulp@3.8.5",
+      "destination": "wwwroot/lib/gulp/"
+    }
+  ]
+}

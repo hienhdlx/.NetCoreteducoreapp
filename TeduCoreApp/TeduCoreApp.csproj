@@ -1,0 +1,229 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>aspnet-TeduCoreApp-C4D92190-4731-4D06-88EE-9CFEEBF9F478</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\admin-side\fonts\**" />
+    <Content Remove="wwwroot\admin-side\fonts\**" />
+    <EmbeddedResource Remove="wwwroot\admin-side\fonts\**" />
+    <None Remove="wwwroot\admin-side\fonts\**" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="3.1.0" />
+    <PackageReference Include="EPPlus.Core" Version="1.5.4" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Localization" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.0.1" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Workspaces.Common" Version="2.3.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.4" PrivateAssets="All" />
+    <PackageReference Include="PaulMiami.AspNetCore.Mvc.Recaptcha" Version="1.2.1" />
+    <PackageReference Include="Serilog.Extensions.Logging.File" Version="1.1.0" />
+    <PackageReference Include="SkiaSharp" Version="1.59.3" />
+    <PackageReference Include="WebMarkupMin.AspNetCore2" Version="2.4.2" />
+    <PackageReference Include="WebMarkupMin.NUglify" Version="2.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TeduCoreApp.Application.Dapper\TeduCoreApp.Application.Dapper.csproj" />
+    <ProjectReference Include="..\TeduCoreApp.Application\TeduCoreApp.Application.csproj" />
+    <ProjectReference Include="..\TeduCoreApp.Data.EF\TeduCoreApp.Data.EF.csproj" />
+    <ProjectReference Include="..\TeduCoreApp.Data\TeduCoreApp.Data.csproj" />
+    <ProjectReference Include="..\TeduCoreApp.Infrastructure\TeduCoreApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\TeduCoreApp.Utilities\TeduCoreApp.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Views\Login\" />
+    <Folder Include="Resources\Controllers\" />
+    <Folder Include="Resources\Models\" />
+    <Folder Include="Resources\Views\Home\" />
+    <Folder Include="Views\Contact\" />
+    <Folder Include="Views\Page\" />
+    <Folder Include="wwwroot\admin-side\images\products\" />
+    <Folder Include="wwwroot\admin-side\images\slider\" />
+    <Folder Include="wwwroot\client-app\controllers\home\" />
+    <Folder Include="wwwroot\client-side\fonts\" />
+    <Folder Include="wwwroot\client-side\fonts\font-awesome\" />
+    <Folder Include="wwwroot\client-side\fonts\pe-icon-7-stroke\" />
+    <Folder Include="wwwroot\client-side\fonts\revicons\" />
+    <Folder Include="wwwroot\client-side\fonts\simple-line-icons\" />
+    <Folder Include="wwwroot\client-side\images\products\" />
+    <Folder Include="wwwroot\client-side\images\slider\" />
+    <Folder Include="wwwroot\export-file\" />
+    <Folder Include="wwwroot\lib\animate.css\" />
+    <Folder Include="wwwroot\lib\bootbox\" />
+    <Folder Include="wwwroot\lib\ckfinder\skins\neko\file-icons\16\" />
+    <Folder Include="wwwroot\lib\ckfinder\skins\neko\file-icons\22\" />
+    <Folder Include="wwwroot\lib\ckfinder\skins\neko\file-icons\256\" />
+    <Folder Include="wwwroot\lib\ckfinder\skins\neko\file-icons\32\" />
+    <Folder Include="wwwroot\lib\ckfinder\skins\neko\file-icons\48\" />
+    <Folder Include="wwwroot\lib\ckfinder\skins\neko\file-icons\64\" />
+    <Folder Include="wwwroot\lib\ckfinder\skins\neko\images\svg\black\" />
+    <Folder Include="wwwroot\lib\ckfinder\skins\neko\images\svg\gray\" />
+    <Folder Include="wwwroot\lib\ckfinder\skins\neko\images\svg\white\" />
+    <Folder Include="wwwroot\lib\ckfinder\src\CKFinder.Connector.Plugin.DiskQuota\Properties\" />
+    <Folder Include="wwwroot\lib\ckfinder\src\CKFinder.Connector.Plugin.GetFileInfo\Properties\" />
+    <Folder Include="wwwroot\lib\ckfinder\src\CKFinder.Connector.Plugin.UserActionsLogger\Properties\" />
+    <Folder Include="wwwroot\lib\ckfinder\src\CKFinder.Connector.Plugin.Watermark\Properties\" />
+    <Folder Include="wwwroot\lib\ckfinder\src\CKFinder.Connector.WebApp\App_Code\" />
+    <Folder Include="wwwroot\lib\ckfinder\src\CKFinder.Connector.WebApp\CKFinderScripts\lang\" />
+    <Folder Include="wwwroot\lib\ckfinder\src\CKFinder.Connector.WebApp\CKFinderScripts\libs\images\icons-png\" />
+    <Folder Include="wwwroot\lib\Flot\docs\" />
+    <Folder Include="wwwroot\lib\Flot\examples\ajax\" />
+    <Folder Include="wwwroot\lib\Flot\examples\annotating\" />
+    <Folder Include="wwwroot\lib\Flot\examples\axes-autoscaling\" />
+    <Folder Include="wwwroot\lib\Flot\examples\axes-interacting\" />
+    <Folder Include="wwwroot\lib\Flot\examples\axes-labels\" />
+    <Folder Include="wwwroot\lib\Flot\examples\axes-multiple\" />
+    <Folder Include="wwwroot\lib\Flot\examples\axes-tickLabels\" />
+    <Folder Include="wwwroot\lib\Flot\examples\axes-time-zones\" />
+    <Folder Include="wwwroot\lib\Flot\examples\axes-time-zones\tz\" />
+    <Folder Include="wwwroot\lib\Flot\examples\axes-time\" />
+    <Folder Include="wwwroot\lib\Flot\examples\basic-options\" />
+    <Folder Include="wwwroot\lib\Flot\examples\basic-usage\" />
+    <Folder Include="wwwroot\lib\Flot\examples\canvas\" />
+    <Folder Include="wwwroot\lib\Flot\examples\categories\" />
+    <Folder Include="wwwroot\lib\Flot\examples\fill-types\" />
+    <Folder Include="wwwroot\lib\Flot\examples\image\" />
+    <Folder Include="wwwroot\lib\Flot\examples\interacting\" />
+    <Folder Include="wwwroot\lib\Flot\examples\log-scale\" />
+    <Folder Include="wwwroot\lib\Flot\examples\navigateTouch\" />
+    <Folder Include="wwwroot\lib\Flot\examples\navigate\" />
+    <Folder Include="wwwroot\lib\Flot\examples\percentiles\" />
+    <Folder Include="wwwroot\lib\Flot\examples\plot-legend\" />
+    <Folder Include="wwwroot\lib\Flot\examples\realtime\" />
+    <Folder Include="wwwroot\lib\Flot\examples\resize\" />
+    <Folder Include="wwwroot\lib\Flot\examples\selection\" />
+    <Folder Include="wwwroot\lib\Flot\examples\series-errorbars\" />
+    <Folder Include="wwwroot\lib\Flot\examples\series-pie\" />
+    <Folder Include="wwwroot\lib\Flot\examples\series-toggle\" />
+    <Folder Include="wwwroot\lib\Flot\examples\series-types\" />
+    <Folder Include="wwwroot\lib\Flot\examples\shared\" />
+    <Folder Include="wwwroot\lib\Flot\examples\shared\jquery-ui\" />
+    <Folder Include="wwwroot\lib\Flot\examples\stacking\" />
+    <Folder Include="wwwroot\lib\Flot\examples\symbols\" />
+    <Folder Include="wwwroot\lib\Flot\examples\threshold\" />
+    <Folder Include="wwwroot\lib\Flot\examples\tracking\" />
+    <Folder Include="wwwroot\lib\Flot\examples\visitors\" />
+    <Folder Include="wwwroot\lib\Flot\examples\zooming\" />
+    <Folder Include="wwwroot\lib\Flot\lib\" />
+    <Folder Include="wwwroot\lib\Flot\source\" />
+    <Folder Include="wwwroot\lib\Flot\tests\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo-mobile\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo-mobile\accordion\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo-mobile\animation\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo-mobile\badge\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo-mobile\button\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo-mobile\datagrid\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo-mobile\datalist\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo-mobile\dialog\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo-mobile\form\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo-mobile\images\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo-mobile\input\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo-mobile\layout\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo-mobile\menu\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo-mobile\panel\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo-mobile\simplelist\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo-mobile\tabs\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo-mobile\toolbar\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo-mobile\tree\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\accordion\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\calendar\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\checkbox\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\combobox\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\combogrid\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\combotreegrid\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\combotree\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\combo\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\datagrid\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\datalist\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\datebox\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\datetimebox\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\datetimespinner\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\dialog\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\draggable\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\droppable\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\easyloader\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\filebox\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\form\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\layout\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\linkbutton\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\maskedbox\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\menubutton\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\menu\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\messager\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\numberbox\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\numberspinner\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\pagination\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\panel\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\passwordbox\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\progressbar\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\propertygrid\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\radiobutton\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\resizable\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\searchbox\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\sidemenu\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\slider\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\splitbutton\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\switchbutton\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\tabs\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\tabs\images\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\tagbox\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\textbox\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\timepicker\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\timespinner\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\tooltip\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\treegrid\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\tree\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\validatebox\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\demo\window\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\locale\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\plugins\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\src\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\themes\black\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\themes\black\images\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\themes\bootstrap\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\themes\bootstrap\images\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\themes\default\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\themes\default\images\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\themes\gray\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\themes\gray\images\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\themes\icons\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\themes\material-blue\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\themes\material-blue\images\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\themes\material-teal\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\themes\material-teal\images\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\themes\material\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\themes\material\images\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\themes\metro\" />
+    <Folder Include="wwwroot\lib\jquery-easyui-1.9.4\themes\metro\images\" />
+    <Folder Include="wwwroot\lib\jquery-treegrid\css\" />
+    <Folder Include="wwwroot\lib\jquery-treegrid\img\" />
+    <Folder Include="wwwroot\lib\jquery-treegrid\js\" />
+    <Folder Include="wwwroot\lib\jquery-validate\localization\" />
+    <Folder Include="wwwroot\lib\mustache.js\" />
+    <Folder Include="wwwroot\lib\twbs-pagination\" />
+    <Folder Include="wwwroot\templates\" />
+    <Folder Include="wwwroot\uploaded\excels\" />
+    <Folder Include="wwwroot\uploaded\images\20200301\" />
+    <Folder Include="wwwroot\uploaded\images\20200308\" />
+  </ItemGroup>
+
+</Project>

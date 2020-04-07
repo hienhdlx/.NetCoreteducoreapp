@@ -1,0 +1,65 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Login in to Admin</title>
+
+    <!-- Bootstrap -->
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <!-- NProgress -->
+    <link href="~/lib/nprogress/nprogress.css" rel="stylesheet" />
+    <!-- Animate.css -->
+    <link href="~/lib/animate.css/animate.css" rel="stylesheet" />
+    <!-- Custom Theme Style -->
+    <link href="~/admin-side/css/custom.css" rel="stylesheet" />
+
+</head>
+
+<body class="login">
+    <div>
+        <div class="login_wrapper">
+            <div class="animate form login_form">
+                <section class="login_content">
+                    <form id="frmLogin">
+                        <h1>Login</h1>
+                        <div>
+                            <input type="text" class="form-control" id="txtUser" name="userName" placeholder="UserName" required="" />
+                        </div>
+                        <div>
+                            <input type="password" class="form-control" id="txtPass" name="password" placeholder="Password" required="" />
+                        </div>
+                        <div>
+                            <a class="btn btn-default submit" href="#" id="btnLogin">Login</a>
+                            <a class="reset_pass" href="#">Forgot password ?</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/App/Shared/tedu.js"></script>
+    <script src="~/App/Controller/login/index.js"></script>
+    <script src="~/lib/notify.js"></script>
+    <script src="~/lib/jquery-validate/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validate/localization/messages_vi.js"></script>
+    <script src="~/lib/jquery-validate/additional-methods.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <script>
+        var login = new loginController();
+        login.intialize();
+    </script>
+</body>
+</html>

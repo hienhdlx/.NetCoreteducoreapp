@@ -1,0 +1,33 @@
+﻿@model List<ProductCategoryViewModel>
+
+<div id="mobile-menu">
+    <ul>
+        <li>
+            <a href="index.html" class="home1">Home Pages</a>
+        </li>
+
+        <li>
+            <a href="/product.html">Product</a>
+            <ul>
+                @foreach (var items in Model.Where(x => x.ParentId == null))
+                {
+                    <li>
+                        <a href="/@items.SeoAlias-c.@(items.Id).html">@items.Name</a>
+                        @if (Model.Any(x => x.ParentId == items.Id))
+                        {
+                            <ul>
+                                @foreach (var subItems in Model.Where(x => x.ParentId == items.Id))
+                                {
+                                    <li>
+                                        <a href="/@subItems.SeoAlias-c.@(subItems.Id).html">@subItems.Name</a>
+                                    </li>
+                                }
+                            </ul>
+                        }
+                    </li>
+                }
+            </ul>
+        </li>
+
+    </ul>
+</div>

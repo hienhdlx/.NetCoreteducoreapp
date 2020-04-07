@@ -1,0 +1,718 @@
+2020-02-16T03:19:41.3258549+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2020-02-16T03:19:42.2402531+07:00  [INF] Executed DbCommand ("208"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-02-16T03:19:42.3568774+07:00  [INF] Executed DbCommand ("55"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-02-16T03:19:42.4520330+07:00  [INF] Executed DbCommand ("68"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-02-16T03:19:42.5755050+07:00  [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-02-16T03:19:42.6042464+07:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-02-16T03:19:42.6987007+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2020-02-16T03:19:42.8464752+07:00  [INF] Executed DbCommand ("40"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-02-16T03:19:42.8732811+07:00  [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-02-16T03:19:42.9094518+07:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-02-16T03:19:42.9753343+07:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-02-16T03:19:43.0438161+07:00  [INF] Executed DbCommand ("41"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-02-16T03:19:43.0991409+07:00  [INF] Executed DbCommand ("38"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-02-16T03:19:44.8635777+07:00 0HLTIAHICKEJU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/   (ca22a1cb)
+2020-02-16T03:19:45.9768736+07:00 0HLTIAHICKEJU:00000001 [INF] Executing action method "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-02-16T03:19:53.2519809+07:00 0HLTIAHICKEJU:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2020-02-16T03:19:53.7993174+07:00 0HLTIAHICKEJV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/admin/login   (ca22a1cb)
+2020-02-16T03:19:53.9359220+07:00 0HLTIAHICKEJV:00000001 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-02-16T03:19:54.5815559+07:00 0HLTIAHICKEJV:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-02-16T03:19:54.6680994+07:00 0HLTIAHICKEJU:00000001 [INF] Executed action "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" in 8957.8347ms (afa2e885)
+2020-02-16T03:19:54.6880090+07:00 0HLTIAHICKEJU:00000001 [INF] Request finished in 9932.8978ms 200 text/html; charset=utf-8 (791a596a)
+2020-02-16T03:19:54.7000829+07:00 0HLTIAHICKEJV:00000001 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" in 881.5925ms (afa2e885)
+2020-02-16T03:19:54.7767471+07:00 0HLTIAHICKEJV:00000001 [INF] Request finished in 930.7162ms 200 text/html; charset=utf-8 (791a596a)
+2020-02-16T03:19:54.7991200+07:00 0HLTIAHICKEK1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/App/Shared/tedu.js   (ca22a1cb)
+2020-02-16T03:19:54.8023545+07:00 0HLTIAHICKEK2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/notify.js   (ca22a1cb)
+2020-02-16T03:19:54.8076668+07:00 0HLTIAHICKEK0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/animate.css/animate.css   (ca22a1cb)
+2020-02-16T03:19:54.8162972+07:00 0HLTIAHICKEK3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/App/Controller/login/index.js   (ca22a1cb)
+2020-02-16T03:19:54.8177335+07:00 0HLTIAHICKEJV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/jquery/jquery.js   (ca22a1cb)
+2020-02-16T03:19:54.8605983+07:00 0HLTIAHICKEK1:00000001 [INF] The file "/App/Shared/tedu.js" was not modified (f1f8d725)
+2020-02-16T03:19:54.8621377+07:00 0HLTIAHICKEK2:00000001 [INF] The file "/lib/notify.js" was not modified (f1f8d725)
+2020-02-16T03:19:54.8643011+07:00 0HLTIAHICKEJV:00000002 [INF] The file "/lib/jquery/jquery.js" was not modified (f1f8d725)
+2020-02-16T03:19:54.8673623+07:00 0HLTIAHICKEK0:00000001 [INF] The file "/lib/animate.css/animate.css" was not modified (f1f8d725)
+2020-02-16T03:19:54.8707830+07:00 0HLTIAHICKEK3:00000001 [INF] The file "/App/Controller/login/index.js" was not modified (f1f8d725)
+2020-02-16T03:19:54.9042877+07:00 0HLTIAHICKEK1:00000001 [INF] Request finished in 99.2782ms 304 application/javascript (791a596a)
+2020-02-16T03:19:54.9061266+07:00 0HLTIAHICKEK2:00000001 [INF] Request finished in 99.3437ms 304 application/javascript (791a596a)
+2020-02-16T03:19:54.9080969+07:00 0HLTIAHICKEJV:00000002 [INF] Request finished in 70.5624ms 304 application/javascript (791a596a)
+2020-02-16T03:19:54.9298916+07:00 0HLTIAHICKEK0:00000001 [INF] Request finished in 107.0061ms 304 text/css (791a596a)
+2020-02-16T03:19:54.9320988+07:00 0HLTIAHICKEK3:00000001 [INF] Request finished in 94.3108ms 304 application/javascript (791a596a)
+2020-02-16T03:20:03.5938562+07:00 0HLTIAHICKEK4:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:56852/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 30 (ca22a1cb)
+2020-02-16T03:20:03.9081876+07:00 0HLTIAHICKEK4:00000001 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" with arguments (["TeduCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2020-02-16T03:20:08.6436241+07:00 0HLTIAHICKEK4:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2020-02-16T03:20:09.0379539+07:00 0HLTIAHICKEK4:00000001 [INF] Executed DbCommand ("200"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2020-02-16T03:20:09.2355786+07:00 0HLTIAHICKEK4:00000001 [WRN] Invalid password for user "16793bac-4641-49a6-a439-08d7afcaf3c2". (c2dce6c7)
+2020-02-16T03:20:09.2428211+07:00 0HLTIAHICKEK4:00000001 [WRN] User "16793bac-4641-49a6-a439-08d7afcaf3c2" failed to provide the correct password. (ec8d2479)
+2020-02-16T03:20:55.5666753+07:00 0HLTIAHICKEK4:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-02-16T03:20:55.7896318+07:00 0HLTIAHICKEK4:00000001 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" in 52103.4926ms (afa2e885)
+2020-02-16T03:20:55.8094689+07:00 0HLTIAHICKEK4:00000001 [INF] Request finished in 52215.4513ms 200 application/json; charset=utf-8 (791a596a)
+2020-02-16T03:21:37.9334140+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2020-02-16T03:21:39.1887446+07:00  [INF] Executed DbCommand ("153"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-02-16T03:21:39.3227964+07:00  [INF] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-02-16T03:21:39.4713076+07:00  [INF] Executed DbCommand ("104"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-02-16T03:21:39.6054725+07:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-02-16T03:21:39.6380692+07:00  [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-02-16T03:21:39.9875834+07:00  [INF] Executed DbCommand ("38"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2020-02-16T03:21:40.2668113+07:00  [INF] Executed DbCommand ("170"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-02-16T03:21:40.4904675+07:00  [INF] Executed DbCommand ("190"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-02-16T03:21:40.5383532+07:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-02-16T03:21:40.6473149+07:00  [INF] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-02-16T03:21:40.6894520+07:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-02-16T03:21:40.7287554+07:00  [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-02-16T03:21:43.9070276+07:00 0HLTIAILM0939:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/   (ca22a1cb)
+2020-02-16T03:21:45.1701862+07:00 0HLTIAILM0939:00000001 [INF] Executing action method "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-02-16T03:21:48.0258023+07:00 0HLTIAILM093B:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/admin/login   (ca22a1cb)
+2020-02-16T03:21:48.1882422+07:00 0HLTIAILM093B:00000001 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-02-16T03:21:53.3028338+07:00 0HLTIAILM0939:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2020-02-16T03:21:53.3041694+07:00 0HLTIAILM093B:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-02-16T03:21:54.0909198+07:00 0HLTIAILM093B:00000001 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" in 5701.5349ms (afa2e885)
+2020-02-16T03:21:54.1750678+07:00 0HLTIAILM093B:00000001 [INF] Request finished in 6198.9557ms 200 text/html; charset=utf-8 (791a596a)
+2020-02-16T03:21:55.5447500+07:00 0HLTIAILM0939:00000001 [INF] Executed action "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" in 10505.9756ms (afa2e885)
+2020-02-16T03:21:55.5948416+07:00 0HLTIAILM0939:00000001 [INF] Request finished in 12133.54ms 200 text/html; charset=utf-8 (791a596a)
+2020-02-16T03:22:04.3765951+07:00 0HLTIAILM093D:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:56852/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2020-02-16T03:22:04.6438495+07:00 0HLTIAILM093D:00000001 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" with arguments (["TeduCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2020-02-16T03:22:06.8563948+07:00 0HLTIAILM093D:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2020-02-16T03:22:07.1156338+07:00 0HLTIAILM093D:00000001 [INF] Executed DbCommand ("135"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2020-02-16T03:22:07.7203867+07:00 0HLTIAILM093D:00000001 [INF] Executed DbCommand ("113"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2020-02-16T03:22:08.0576059+07:00 0HLTIAILM093D:00000001 [INF] Executed DbCommand ("215"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-02-16T03:22:08.1261621+07:00 0HLTIAILM093D:00000001 [INF] Executed DbCommand ("48"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2020-02-16T03:22:08.1992867+07:00 0HLTIAILM093D:00000001 [INF] Executed DbCommand ("38"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2020-02-16T03:22:08.2558609+07:00 0HLTIAILM093D:00000001 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2020-02-16T03:22:20.7978925+07:00 0HLTIAILM093D:00000001 [INF] User logged in. (fdce0db4)
+2020-02-16T03:22:20.8283251+07:00 0HLTIAILM093D:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-02-16T03:22:20.9880439+07:00 0HLTIAILM093D:00000001 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" in 16532.5336ms (afa2e885)
+2020-02-16T03:22:21.0382257+07:00 0HLTIAILM093D:00000001 [INF] Request finished in 16629.5252ms 200 application/json; charset=utf-8 (791a596a)
+2020-02-16T03:22:21.0549176+07:00 0HLTIAILM093D:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:56852/Admin/Home/Index   (ca22a1cb)
+2020-02-16T03:22:21.0838178+07:00 0HLTIAILM093D:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-02-16T03:22:21.1202017+07:00 0HLTIAILM093D:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-02-16T03:22:21.1981155+07:00 0HLTIAILM093D:00000002 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-02-16T03:22:21.3651730+07:00 0HLTIAILM093D:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2020-02-16T03:22:21.6301175+07:00 0HLTIAILM093D:00000002 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" in 538.6071ms (afa2e885)
+2020-02-16T03:22:21.6350748+07:00 0HLTIAILM093D:00000002 [INF] Request finished in 582.8477ms 200 text/html; charset=utf-8 (791a596a)
+2020-02-16T03:22:21.7121545+07:00 0HLTIAILM093G:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/fastclick/lib/fastclick.js   (ca22a1cb)
+2020-02-16T03:22:21.7145088+07:00 0HLTIAILM093F:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/nprogress/nprogress.js   (ca22a1cb)
+2020-02-16T03:22:21.7166625+07:00 0HLTIAILM093E:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/admin-side/images/img.jpg   (ca22a1cb)
+2020-02-16T03:22:21.7184424+07:00 0HLTIAILM093D:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2020-02-16T03:22:21.7446391+07:00 0HLTIAILM093E:00000001 [INF] Sending file. Request path: '"/admin-side/images/img.jpg"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\admin-side\images\img.jpg"' (27b0a520)
+2020-02-16T03:22:21.7463216+07:00 0HLTIAILM093F:00000001 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.js"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\lib\nprogress\nprogress.js"' (27b0a520)
+2020-02-16T03:22:21.7495296+07:00 0HLTIAILM093G:00000001 [INF] Sending file. Request path: '"/lib/fastclick/lib/fastclick.js"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\lib\fastclick\lib\fastclick.js"' (27b0a520)
+2020-02-16T03:22:21.7502890+07:00 0HLTIAILM093D:00000003 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2020-02-16T03:22:21.7808704+07:00 0HLTIAILM093I:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2020-02-16T03:22:21.7826416+07:00 0HLTIAILM093H:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2020-02-16T03:22:21.8427701+07:00 0HLTIAILM093H:00000001 [INF] Sending file. Request path: '"/lib/jquery-sparkline/dist/jquery.sparkline.js"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\lib\jquery-sparkline\dist\jquery.sparkline.js"' (27b0a520)
+2020-02-16T03:22:21.8457997+07:00 0HLTIAILM093E:00000001 [INF] Request finished in 109.9096ms 200 image/jpeg (791a596a)
+2020-02-16T03:22:21.8795681+07:00 0HLTIAILM093D:00000003 [INF] Request finished in 170.4068ms 200 text/css (791a596a)
+2020-02-16T03:22:21.8844925+07:00 0HLTIAILM093E:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/moment/moment.js   (ca22a1cb)
+2020-02-16T03:22:21.8995424+07:00 0HLTIAILM093E:00000002 [INF] Sending file. Request path: '"/lib/moment/moment.js"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\lib\moment\moment.js"' (27b0a520)
+2020-02-16T03:22:21.9119640+07:00 0HLTIAILM093D:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/bootbox/bootbox.js   (ca22a1cb)
+2020-02-16T03:22:21.9150453+07:00 0HLTIAILM093G:00000001 [INF] Request finished in 134.1048ms 200 application/javascript (791a596a)
+2020-02-16T03:22:21.9274443+07:00 0HLTIAILM093D:00000004 [INF] Sending file. Request path: '"/lib/bootbox/bootbox.js"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\lib\bootbox\bootbox.js"' (27b0a520)
+2020-02-16T03:22:21.9370177+07:00 0HLTIAILM093F:00000001 [INF] Request finished in 221.9357ms 200 application/javascript (791a596a)
+2020-02-16T03:22:21.9429517+07:00 0HLTIAILM093G:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2020-02-16T03:22:21.9668900+07:00 0HLTIAILM093G:00000002 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2020-02-16T03:22:21.9788188+07:00 0HLTIAILM093F:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:56852/admin-side/js/custom.js   (ca22a1cb)
+2020-02-16T03:22:21.9828268+07:00 0HLTIAILM093I:00000001 [INF] Sending file. Request path: '"/lib/Chart.js/dist/Chart.js"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\lib\Chart.js\dist\Chart.js"' (27b0a520)
+2020-02-16T03:22:22.0084017+07:00 0HLTIAILM093F:00000002 [INF] Sending file. Request path: '"/admin-side/js/custom.js"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\admin-side\js\custom.js"' (27b0a520)
+2020-02-16T03:22:22.0170442+07:00 0HLTIAILM093D:00000004 [INF] Request finished in 94.916ms 200 application/javascript (791a596a)
+2020-02-16T03:22:22.0425807+07:00 0HLTIAILM093G:00000002 [INF] Request finished in 74.117ms 200 application/javascript (791a596a)
+2020-02-16T03:22:22.0511190+07:00 0HLTIAILM093E:00000002 [INF] Request finished in 169.1998ms 200 application/javascript (791a596a)
+2020-02-16T03:22:22.0668843+07:00 0HLTIAILM093H:00000001 [INF] Request finished in 230.5413ms 200 application/javascript (791a596a)
+2020-02-16T03:22:22.0701577+07:00 0HLTIAILM093F:00000002 [INF] Request finished in 98.4804ms 200 application/javascript (791a596a)
+2020-02-16T03:22:22.0857678+07:00 0HLTIAILM093I:00000001 [INF] Request finished in 311.3772ms 200 application/javascript (791a596a)
+2020-02-16T03:22:22.1308187+07:00 0HLTIAILM093I:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2020-02-16T03:22:22.1412209+07:00 0HLTIAILM093I:00000002 [INF] Sending file. Request path: '"/lib/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2020-02-16T03:22:22.2641146+07:00 0HLTIAILM093I:00000002 [INF] Request finished in 101.0236ms 200 font/woff2 (791a596a)
+2020-02-16T03:27:38.5457832+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2020-02-16T03:27:39.5362282+07:00  [INF] Executed DbCommand ("217"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-02-16T03:27:39.6373404+07:00  [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-02-16T03:27:39.7011354+07:00  [INF] Executed DbCommand ("34"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-02-16T03:27:39.8164417+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-02-16T03:27:39.8391189+07:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-02-16T03:27:39.9793347+07:00  [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2020-02-16T03:27:40.0745482+07:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-02-16T03:27:40.0999629+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-02-16T03:27:40.1512270+07:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-02-16T03:27:40.2238323+07:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-02-16T03:27:40.2919504+07:00  [INF] Executed DbCommand ("47"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-02-16T03:27:40.3426055+07:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-02-16T03:27:41.9217223+07:00 0HLTIAM0K1OMT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/   (ca22a1cb)
+2020-02-16T03:27:42.1039783+07:00 0HLTIAM0K1OMT:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-02-16T03:27:43.0406891+07:00 0HLTIAM0K1OMT:00000001 [INF] Executing action method "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-02-16T03:27:46.0732275+07:00 0HLTIAM0K1OMS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/admin/login   (ca22a1cb)
+2020-02-16T03:27:46.1106285+07:00 0HLTIAM0K1OMS:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-02-16T03:27:46.1474813+07:00 0HLTIAM0K1OMS:00000001 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-02-16T03:27:48.8872859+07:00 0HLTIAM0K1OMS:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-02-16T03:27:48.8882309+07:00 0HLTIAM0K1OMT:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2020-02-16T03:27:49.2335302+07:00 0HLTIAM0K1OMS:00000001 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" in 3036.4034ms (afa2e885)
+2020-02-16T03:27:49.2742119+07:00 0HLTIAM0K1OMS:00000001 [INF] Request finished in 3182.3865ms 200 text/html; charset=utf-8 (791a596a)
+2020-02-16T03:27:49.9560374+07:00 0HLTIAM0K1OMT:00000001 [INF] Executed action "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" in 7142.6464ms (afa2e885)
+2020-02-16T03:27:49.9652372+07:00 0HLTIAM0K1OMT:00000001 [INF] Request finished in 8118.8593ms 200 text/html; charset=utf-8 (791a596a)
+2020-02-16T03:28:03.1034724+07:00 0HLTIAM0K1OMS:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:56852/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2020-02-16T03:28:03.1090585+07:00 0HLTIAM0K1OMS:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-02-16T03:28:03.2488681+07:00 0HLTIAM0K1OMS:00000002 [INF] Antiforgery token validation failed. "The required antiforgery cookie \".AspNetCore.Antiforgery.m7FN-wHmA-E\" is not present." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.m7FN-wHmA-E" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2020-02-16T03:28:03.2572630+07:00 0HLTIAM0K1OMS:00000002 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2020-02-16T03:28:03.2643600+07:00 0HLTIAM0K1OMS:00000002 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2020-02-16T03:28:03.2694382+07:00 0HLTIAM0K1OMS:00000002 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" in 95.8314ms (afa2e885)
+2020-02-16T03:28:03.3018606+07:00 0HLTIAM0K1OMS:00000002 [INF] Request finished in 195.5558ms 400  (791a596a)
+2020-02-16T03:28:04.6921917+07:00 0HLTIAM0K1OMS:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:56852/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2020-02-16T03:28:04.6980723+07:00 0HLTIAM0K1OMS:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-02-16T03:28:04.7064401+07:00 0HLTIAM0K1OMS:00000003 [INF] Antiforgery token validation failed. "The required antiforgery cookie \".AspNetCore.Antiforgery.m7FN-wHmA-E\" is not present." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.m7FN-wHmA-E" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2020-02-16T03:28:04.7116953+07:00 0HLTIAM0K1OMS:00000003 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2020-02-16T03:28:04.7161554+07:00 0HLTIAM0K1OMS:00000003 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2020-02-16T03:28:04.7198879+07:00 0HLTIAM0K1OMS:00000003 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" in 15.8807ms (afa2e885)
+2020-02-16T03:28:04.7250590+07:00 0HLTIAM0K1OMS:00000003 [INF] Request finished in 32.902ms 400  (791a596a)
+2020-02-16T03:28:04.8441778+07:00 0HLTIAM0K1OMS:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:56852/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2020-02-16T03:28:04.8485703+07:00 0HLTIAM0K1OMS:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-02-16T03:28:04.8532516+07:00 0HLTIAM0K1OMS:00000004 [INF] Antiforgery token validation failed. "The required antiforgery cookie \".AspNetCore.Antiforgery.m7FN-wHmA-E\" is not present." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.m7FN-wHmA-E" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2020-02-16T03:28:04.8586416+07:00 0HLTIAM0K1OMS:00000004 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2020-02-16T03:28:04.8626057+07:00 0HLTIAM0K1OMS:00000004 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2020-02-16T03:28:04.8669016+07:00 0HLTIAM0K1OMS:00000004 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" in 13.9515ms (afa2e885)
+2020-02-16T03:28:04.8721352+07:00 0HLTIAM0K1OMS:00000004 [INF] Request finished in 26.9126ms 400  (791a596a)
+2020-02-16T03:28:04.9736544+07:00 0HLTIAM0K1OMS:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:56852/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2020-02-16T03:28:04.9820349+07:00 0HLTIAM0K1OMS:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-02-16T03:28:04.9891276+07:00 0HLTIAM0K1OMS:00000005 [INF] Antiforgery token validation failed. "The required antiforgery cookie \".AspNetCore.Antiforgery.m7FN-wHmA-E\" is not present." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.m7FN-wHmA-E" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2020-02-16T03:28:04.9955186+07:00 0HLTIAM0K1OMS:00000005 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2020-02-16T03:28:04.9997416+07:00 0HLTIAM0K1OMS:00000005 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2020-02-16T03:28:05.0039902+07:00 0HLTIAM0K1OMS:00000005 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" in 16.9707ms (afa2e885)
+2020-02-16T03:28:05.0118724+07:00 0HLTIAM0K1OMS:00000005 [INF] Request finished in 35.8803ms 400  (791a596a)
+2020-02-16T03:28:10.0075868+07:00 0HLTIAM0K1OMS:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:56852/admin/login/authen   (ca22a1cb)
+2020-02-16T03:28:10.0134852+07:00 0HLTIAM0K1OMS:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-02-16T03:28:10.0523689+07:00 0HLTIAM0K1OMS:00000006 [INF] Request finished in 19.9763ms 404  (791a596a)
+2020-02-16T19:03:26.7725188+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2020-02-16T19:03:28.8477957+07:00  [INF] Executed DbCommand ("250"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-02-16T19:03:29.0302556+07:00  [INF] Executed DbCommand ("58"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-02-16T19:03:29.1059863+07:00  [INF] Executed DbCommand ("50"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-02-16T19:03:29.4068011+07:00  [INF] Executed DbCommand ("111"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-02-16T19:03:29.4638789+07:00  [INF] Executed DbCommand ("47"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-02-16T19:03:29.8226364+07:00  [INF] Executed DbCommand ("94"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2020-02-16T19:03:30.0386213+07:00  [INF] Executed DbCommand ("117"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-02-16T19:03:30.1464111+07:00  [INF] Executed DbCommand ("76"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-02-16T19:03:30.3003897+07:00  [INF] Executed DbCommand ("97"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-02-16T19:03:30.4046219+07:00  [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-02-16T19:03:30.4649339+07:00  [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-02-16T19:03:30.4975998+07:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-02-16T19:03:33.6664095+07:00 0HLTIR0UOLI15:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/   (ca22a1cb)
+2020-02-16T19:03:34.7785493+07:00 0HLTIR0UOLI15:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2020-02-16T19:03:35.7645919+07:00 0HLTIR0UOLI15:00000001 [INF] Executed DbCommand ("594"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2020-02-16T19:03:36.3615369+07:00 0HLTIR0UOLI15:00000001 [INF] Executed DbCommand ("194"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2020-02-16T19:03:36.6915851+07:00 0HLTIR0UOLI15:00000001 [INF] Executed DbCommand ("181"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-02-16T19:03:36.8679269+07:00 0HLTIR0UOLI15:00000001 [INF] Executed DbCommand ("136"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2020-02-16T19:03:37.0615316+07:00 0HLTIR0UOLI15:00000001 [INF] Executed DbCommand ("146"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2020-02-16T19:03:37.1501267+07:00 0HLTIR0UOLI15:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-02-16T19:03:41.9492565+07:00 0HLTIR0UOLI15:00000001 [INF] Executing action method "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-02-16T19:03:42.4363051+07:00 0HLTIR0UOLI17:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/admin   (ca22a1cb)
+2020-02-16T19:03:42.4510966+07:00 0HLTIR0UOLI17:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2020-02-16T19:03:42.5901652+07:00 0HLTIR0UOLI17:00000001 [INF] Executed DbCommand ("87"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2020-02-16T19:03:42.6897431+07:00 0HLTIR0UOLI17:00000001 [INF] Executed DbCommand ("93"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2020-02-16T19:03:42.7637111+07:00 0HLTIR0UOLI17:00000001 [INF] Executed DbCommand ("64"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-02-16T19:03:42.8508812+07:00 0HLTIR0UOLI17:00000001 [INF] Executed DbCommand ("76"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2020-02-16T19:03:43.0365524+07:00 0HLTIR0UOLI17:00000001 [INF] Executed DbCommand ("172"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2020-02-16T19:03:43.0437750+07:00 0HLTIR0UOLI17:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-02-16T19:03:43.2435110+07:00 0HLTIR0UOLI17:00000001 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-02-16T19:03:51.2865589+07:00 0HLTIR0UOLI17:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-02-16T19:03:51.2887979+07:00 0HLTIR0UOLI15:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2020-02-16T19:03:51.7253383+07:00 0HLTIR0UOLI17:00000001 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" in 8620.858ms (afa2e885)
+2020-02-16T19:03:51.8693901+07:00 0HLTIR0UOLI18:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/jquery-validate/localization/messages_vi.js   (ca22a1cb)
+2020-02-16T19:03:51.8746833+07:00 0HLTIR0UOLI17:00000001 [INF] Request finished in 9388.0613ms 200 text/html; charset=utf-8 (791a596a)
+2020-02-16T19:03:51.8812154+07:00 0HLTIR0UOLI16:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/jquery-validate/jquery.validate.js   (ca22a1cb)
+2020-02-16T19:03:52.0163522+07:00 0HLTIR0UOLI18:00000001 [INF] Sending file. Request path: '"/lib/jquery-validate/localization/messages_vi.js"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\lib\jquery-validate\localization\messages_vi.js"' (27b0a520)
+2020-02-16T19:03:52.0269595+07:00 0HLTIR0UOLI16:00000001 [INF] Sending file. Request path: '"/lib/jquery-validate/jquery.validate.js"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\lib\jquery-validate\jquery.validate.js"' (27b0a520)
+2020-02-16T19:03:52.0846701+07:00 0HLTIR0UOLI17:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/jquery/jquery.js   (ca22a1cb)
+2020-02-16T19:03:52.1400646+07:00 0HLTIR0UOLI19:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/jquery-validate/additional-methods.js   (ca22a1cb)
+2020-02-16T19:03:52.1693608+07:00 0HLTIR0UOLI19:00000001 [INF] Sending file. Request path: '"/lib/jquery-validate/additional-methods.js"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\lib\jquery-validate\additional-methods.js"' (27b0a520)
+2020-02-16T19:03:52.1717785+07:00 0HLTIR0UOLI17:00000002 [INF] The file "/lib/jquery/jquery.js" was not modified (f1f8d725)
+2020-02-16T19:03:52.1765567+07:00 0HLTIR0UOLI16:00000001 [INF] Request finished in 305.8597ms 200 application/javascript (791a596a)
+2020-02-16T19:03:52.2351525+07:00 0HLTIR0UOLI17:00000002 [INF] Request finished in 166.1989ms 304 application/javascript (791a596a)
+2020-02-16T19:03:52.2407759+07:00 0HLTIR0UOLI16:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:56852/App/Shared/tedu.js   (ca22a1cb)
+2020-02-16T19:03:52.2484404+07:00 0HLTIR0UOLI19:00000001 [INF] Request finished in 162.1485ms 200 application/javascript (791a596a)
+2020-02-16T19:03:52.2557555+07:00 0HLTIR0UOLI17:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:56852/App/Controller/login/index.js   (ca22a1cb)
+2020-02-16T19:03:52.2662488+07:00 0HLTIR0UOLI19:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/notify.js   (ca22a1cb)
+2020-02-16T19:03:52.2698121+07:00 0HLTIR0UOLI17:00000003 [INF] Sending file. Request path: '"/App/Controller/login/index.js"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\App\Controller\login\index.js"' (27b0a520)
+2020-02-16T19:03:52.3097970+07:00 0HLTIR0UOLI19:00000002 [INF] The file "/lib/notify.js" was not modified (f1f8d725)
+2020-02-16T19:03:52.3196541+07:00 0HLTIR0UOLI17:00000003 [INF] Request finished in 56.9578ms 200 application/javascript (791a596a)
+2020-02-16T19:03:52.3233474+07:00 0HLTIR0UOLI19:00000002 [INF] Request finished in 56.3034ms 304 application/javascript (791a596a)
+2020-02-16T19:03:52.3451677+07:00 0HLTIR0UOLI16:00000002 [INF] The file "/App/Shared/tedu.js" was not modified (f1f8d725)
+2020-02-16T19:03:52.3700117+07:00 0HLTIR0UOLI1A:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2020-02-16T19:03:52.3734308+07:00 0HLTIR0UOLI16:00000002 [INF] Request finished in 124.2215ms 304 application/javascript (791a596a)
+2020-02-16T19:03:52.4074533+07:00 0HLTIR0UOLI1A:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2020-02-16T19:03:52.4383654+07:00 0HLTIR0UOLI1B:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/animate.css/animate.css   (ca22a1cb)
+2020-02-16T19:03:52.4573893+07:00 0HLTIR0UOLI18:00000001 [INF] Request finished in 584.795ms 200 application/javascript (791a596a)
+2020-02-16T19:03:52.5938766+07:00 0HLTIR0UOLI1B:00000001 [INF] The file "/lib/animate.css/animate.css" was not modified (f1f8d725)
+2020-02-16T19:03:52.6003871+07:00 0HLTIR0UOLI1A:00000001 [INF] Request finished in 118.5086ms 200 application/javascript (791a596a)
+2020-02-16T19:03:52.6512245+07:00 0HLTIR0UOLI1B:00000001 [INF] Request finished in 205.2246ms 304 text/css (791a596a)
+2020-02-16T19:03:53.4768384+07:00 0HLTIR0UOLI15:00000001 [INF] Executed action "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" in 15167.4531ms (afa2e885)
+2020-02-16T19:03:53.4848485+07:00 0HLTIR0UOLI15:00000001 [INF] Request finished in 20032.575ms 200 text/html; charset=utf-8 (791a596a)
+2020-02-16T19:04:09.0345642+07:00 0HLTIR0UOLI1B:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:56852/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2020-02-16T19:04:09.0396262+07:00 0HLTIR0UOLI1B:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-02-16T19:04:09.3498927+07:00 0HLTIR0UOLI1B:00000002 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" with arguments (["TeduCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2020-02-16T19:04:16.7967490+07:00 0HLTIR0UOLI1B:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2020-02-16T19:04:16.9841153+07:00 0HLTIR0UOLI1B:00000002 [INF] Executed DbCommand ("109"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2020-02-16T19:04:17.1655320+07:00 0HLTIR0UOLI1B:00000002 [INF] Executed DbCommand ("50"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2020-02-16T19:04:17.2345417+07:00 0HLTIR0UOLI1B:00000002 [INF] Executed DbCommand ("61"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-02-16T19:04:17.2879838+07:00 0HLTIR0UOLI1B:00000002 [INF] Executed DbCommand ("49"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2020-02-16T19:04:17.3537587+07:00 0HLTIR0UOLI1B:00000002 [INF] Executed DbCommand ("57"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2020-02-16T19:04:17.3791195+07:00 0HLTIR0UOLI1B:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2020-02-16T19:04:17.3952726+07:00 0HLTIR0UOLI1B:00000002 [INF] User logged in. (fdce0db4)
+2020-02-16T19:04:17.4495475+07:00 0HLTIR0UOLI1B:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-02-16T19:04:17.6142657+07:00 0HLTIR0UOLI1B:00000002 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" in 8463.1039ms (afa2e885)
+2020-02-16T19:04:17.6672802+07:00 0HLTIR0UOLI1B:00000002 [INF] Request finished in 8589.1916ms 200 application/json; charset=utf-8 (791a596a)
+2020-02-16T19:04:17.6755479+07:00 0HLTIR0UOLI1B:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:56852/Admin/Home/Index   (ca22a1cb)
+2020-02-16T19:04:17.6799933+07:00 0HLTIR0UOLI1B:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-02-16T19:04:17.7634095+07:00 0HLTIR0UOLI1B:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-02-16T19:04:17.8797740+07:00 0HLTIR0UOLI1B:00000003 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-02-16T19:04:18.0357330+07:00 0HLTIR0UOLI1B:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2020-02-16T19:04:18.2664938+07:00 0HLTIR0UOLI1B:00000003 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" in 575.7925ms (afa2e885)
+2020-02-16T19:04:18.2743665+07:00 0HLTIR0UOLI1B:00000003 [INF] Request finished in 595.8111ms 200 text/html; charset=utf-8 (791a596a)
+2020-02-16T19:04:18.3352688+07:00 0HLTIR0UOLI16:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/nprogress/nprogress.js   (ca22a1cb)
+2020-02-16T19:04:18.3378084+07:00 0HLTIR0UOLI18:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/fastclick/lib/fastclick.js   (ca22a1cb)
+2020-02-16T19:04:18.3449652+07:00 0HLTIR0UOLI1A:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:56852/admin-side/images/img.jpg   (ca22a1cb)
+2020-02-16T19:04:18.3459863+07:00 0HLTIR0UOLI16:00000003 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.js"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\lib\nprogress\nprogress.js"' (27b0a520)
+2020-02-16T19:04:18.3542565+07:00 0HLTIR0UOLI18:00000002 [INF] Sending file. Request path: '"/lib/fastclick/lib/fastclick.js"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\lib\fastclick\lib\fastclick.js"' (27b0a520)
+2020-02-16T19:04:18.3582359+07:00 0HLTIR0UOLI1A:00000002 [INF] Sending file. Request path: '"/admin-side/images/img.jpg"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\admin-side\images\img.jpg"' (27b0a520)
+2020-02-16T19:04:18.3964965+07:00 0HLTIR0UOLI1B:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2020-02-16T19:04:18.4092986+07:00 0HLTIR0UOLI16:00000003 [INF] Request finished in 78.7734ms 200 application/javascript (791a596a)
+2020-02-16T19:04:18.4123733+07:00 0HLTIR0UOLI1B:00000004 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2020-02-16T19:04:18.4198699+07:00 0HLTIR0UOLI19:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2020-02-16T19:04:18.4208968+07:00 0HLTIR0UOLI16:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/moment/moment.js   (ca22a1cb)
+2020-02-16T19:04:18.4311622+07:00 0HLTIR0UOLI19:00000003 [INF] Sending file. Request path: '"/lib/Chart.js/dist/Chart.js"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\lib\Chart.js\dist\Chart.js"' (27b0a520)
+2020-02-16T19:04:18.4331715+07:00 0HLTIR0UOLI16:00000004 [INF] Sending file. Request path: '"/lib/moment/moment.js"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\lib\moment\moment.js"' (27b0a520)
+2020-02-16T19:04:18.4367285+07:00 0HLTIR0UOLI1A:00000002 [INF] Request finished in 104.1526ms 200 image/jpeg (791a596a)
+2020-02-16T19:04:18.4431975+07:00 0HLTIR0UOLI1B:00000004 [INF] Request finished in 134.4338ms 200 text/css (791a596a)
+2020-02-16T19:04:18.4609270+07:00 0HLTIR0UOLI1A:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2020-02-16T19:04:18.5755811+07:00 0HLTIR0UOLI1B:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/bootbox/bootbox.js   (ca22a1cb)
+2020-02-16T19:04:18.5972330+07:00 0HLTIR0UOLI1A:00000003 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2020-02-16T19:04:18.6055215+07:00 0HLTIR0UOLI17:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2020-02-16T19:04:18.6215900+07:00 0HLTIR0UOLI1B:00000005 [INF] Sending file. Request path: '"/lib/bootbox/bootbox.js"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\lib\bootbox\bootbox.js"' (27b0a520)
+2020-02-16T19:04:18.6511989+07:00 0HLTIR0UOLI17:00000004 [INF] Sending file. Request path: '"/lib/jquery-sparkline/dist/jquery.sparkline.js"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\lib\jquery-sparkline\dist\jquery.sparkline.js"' (27b0a520)
+2020-02-16T19:04:18.7028967+07:00 0HLTIR0UOLI1B:00000005 [INF] Request finished in 223.4275ms 200 application/javascript (791a596a)
+2020-02-16T19:04:18.7095290+07:00 0HLTIR0UOLI1A:00000003 [INF] Request finished in 234.7564ms 200 application/javascript (791a596a)
+2020-02-16T19:04:18.7930827+07:00 0HLTIR0UOLI18:00000002 [INF] Request finished in 340.8484ms 200 application/javascript (791a596a)
+2020-02-16T19:04:18.8128237+07:00 0HLTIR0UOLI1A:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:56852/admin-side/js/custom.js   (ca22a1cb)
+2020-02-16T19:04:18.8264099+07:00 0HLTIR0UOLI16:00000004 [INF] Request finished in 381.7775ms 200 application/javascript (791a596a)
+2020-02-16T19:04:18.8407886+07:00 0HLTIR0UOLI17:00000004 [INF] Request finished in 277.1749ms 200 application/javascript (791a596a)
+2020-02-16T19:04:18.8542111+07:00 0HLTIR0UOLI1A:00000004 [INF] Sending file. Request path: '"/admin-side/js/custom.js"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\admin-side\js\custom.js"' (27b0a520)
+2020-02-16T19:04:18.9125563+07:00 0HLTIR0UOLI18:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2020-02-16T19:04:18.9511711+07:00 0HLTIR0UOLI1A:00000004 [INF] Request finished in 117.1932ms 200 application/javascript (791a596a)
+2020-02-16T19:04:18.9656886+07:00 0HLTIR0UOLI19:00000003 [INF] Request finished in 500.6614ms 200 application/javascript (791a596a)
+2020-02-16T19:04:18.9761268+07:00 0HLTIR0UOLI18:00000003 [INF] Sending file. Request path: '"/lib/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2020-02-16T19:04:19.0159233+07:00 0HLTIR0UOLI18:00000003 [INF] Request finished in 128.3837ms 200 font/woff2 (791a596a)
+2020-02-16T23:37:02.8268066+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2020-02-16T23:37:03.6739735+07:00  [INF] Executed DbCommand ("105"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-02-16T23:37:03.7558601+07:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-02-16T23:37:03.7910978+07:00  [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2020-02-16T23:37:03.8934009+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2020-02-16T23:37:03.9125165+07:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2020-02-16T23:37:04.4198939+07:00  [INF] Executed DbCommand ("61"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2020-02-16T23:37:04.6186906+07:00  [INF] Executed DbCommand ("48"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2020-02-16T23:37:04.7447456+07:00  [INF] Executed DbCommand ("62"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2020-02-16T23:37:04.9178262+07:00  [INF] Executed DbCommand ("70"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2020-02-16T23:37:05.0002543+07:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-02-16T23:37:05.0340727+07:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-02-16T23:37:05.0558021+07:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2020-02-16T23:37:08.3973768+07:00 0HLTIVPQINOMP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/   (ca22a1cb)
+2020-02-16T23:37:08.7712530+07:00 0HLTIVPQINOMP:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2020-02-16T23:37:09.9364983+07:00 0HLTIVPQINOMP:00000001 [INF] Executed DbCommand ("638"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2020-02-16T23:37:11.0245135+07:00 0HLTIVPQINOMP:00000001 [INF] Executed DbCommand ("388"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2020-02-16T23:37:11.3585227+07:00 0HLTIVPQINOMP:00000001 [INF] Executed DbCommand ("158"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-02-16T23:37:11.5490022+07:00 0HLTIVPQINOMP:00000001 [INF] Executed DbCommand ("155"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2020-02-16T23:37:11.8157981+07:00 0HLTIVPQINOMP:00000001 [INF] Executed DbCommand ("200"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2020-02-16T23:37:11.9200896+07:00 0HLTIVPQINOMP:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-02-16T23:37:13.2845802+07:00 0HLTIVPQINOMP:00000001 [INF] Executing action method "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-02-16T23:37:22.4950077+07:00 0HLTIVPQINOMP:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2020-02-16T23:37:24.4478152+07:00 0HLTIVPQINOMP:00000001 [INF] Executed action "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" in 11405.7032ms (afa2e885)
+2020-02-16T23:37:24.5633755+07:00 0HLTIVPQINOMP:00000001 [INF] Request finished in 16430.1265ms 200 text/html; charset=utf-8 (791a596a)
+2020-02-16T23:37:27.7293166+07:00 0HLTIVPQINOMP:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:56852/admin/login   (ca22a1cb)
+2020-02-16T23:37:27.7388395+07:00 0HLTIVPQINOMP:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-02-16T23:37:27.8351230+07:00 0HLTIVPQINOMP:00000002 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-02-16T23:37:28.1532186+07:00 0HLTIVPQINOMP:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2020-02-16T23:37:28.1940176+07:00 0HLTIVPQINOMP:00000002 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" in 432.1717ms (afa2e885)
+2020-02-16T23:37:28.2046786+07:00 0HLTIVPQINOMP:00000002 [INF] Request finished in 480.3405ms 200 text/html; charset=utf-8 (791a596a)
+2020-02-16T23:37:28.2686420+07:00 0HLTIVPQINOMP:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:56852/App/Shared/tedu.js   (ca22a1cb)
+2020-02-16T23:37:28.2737235+07:00 0HLTIVPQINOMS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/jquery-validate/jquery.validate.js   (ca22a1cb)
+2020-02-16T23:37:28.2764808+07:00 0HLTIVPQINOMR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/jquery-validate/additional-methods.js   (ca22a1cb)
+2020-02-16T23:37:28.2837582+07:00 0HLTIVPQINOMQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/App/Controller/login/index.js   (ca22a1cb)
+2020-02-16T23:37:28.3163174+07:00 0HLTIVPQINOMS:00000001 [INF] The file "/lib/jquery-validate/jquery.validate.js" was not modified (f1f8d725)
+2020-02-16T23:37:28.3196183+07:00 0HLTIVPQINOMR:00000001 [INF] The file "/lib/jquery-validate/additional-methods.js" was not modified (f1f8d725)
+2020-02-16T23:37:28.3306442+07:00 0HLTIVPQINOMP:00000003 [INF] The file "/App/Shared/tedu.js" was not modified (f1f8d725)
+2020-02-16T23:37:28.3331501+07:00 0HLTIVPQINOMQ:00000001 [INF] Sending file. Request path: '"/App/Controller/login/index.js"'. Physical path: '"F:\ASP.net Core\teducoreapp\TeduCoreApp\wwwroot\App\Controller\login\index.js"' (27b0a520)
+2020-02-16T23:37:28.3550664+07:00 0HLTIVPQINOMS:00000001 [INF] Request finished in 80.2325ms 304 application/javascript (791a596a)
+2020-02-16T23:37:28.3596181+07:00 0HLTIVPQINOMR:00000001 [INF] Request finished in 80.2619ms 304 application/javascript (791a596a)
+2020-02-16T23:37:28.3795303+07:00 0HLTIVPQINOMT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/jquery-validate/localization/messages_vi.js   (ca22a1cb)
+2020-02-16T23:37:28.3821358+07:00 0HLTIVPQINOMU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/jquery/jquery.js   (ca22a1cb)
+2020-02-16T23:37:28.4047742+07:00 0HLTIVPQINOMP:00000003 [INF] Request finished in 82.797ms 304 application/javascript (791a596a)
+2020-02-16T23:37:28.4630878+07:00 0HLTIVPQINOMT:00000001 [INF] The file "/lib/jquery-validate/localization/messages_vi.js" was not modified (f1f8d725)
+2020-02-16T23:37:28.4746952+07:00 0HLTIVPQINOMU:00000001 [INF] The file "/lib/jquery/jquery.js" was not modified (f1f8d725)
+2020-02-16T23:37:28.5457067+07:00 0HLTIVPQINOMT:00000001 [INF] Request finished in 99.4747ms 304 application/javascript (791a596a)
+2020-02-16T23:37:28.5570977+07:00 0HLTIVPQINOMU:00000001 [INF] Request finished in 109.3392ms 304 application/javascript (791a596a)
+2020-02-16T23:37:28.6351739+07:00 0HLTIVPQINOMQ:00000001 [INF] Request finished in 210.0402ms 200 application/javascript (791a596a)
+2020-02-16T23:37:36.7692741+07:00 0HLTIVPQINOMU:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:56852/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2020-02-16T23:37:36.7817655+07:00 0HLTIVPQINOMU:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-02-16T23:37:37.0702477+07:00 0HLTIVPQINOMU:00000002 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" with arguments (["TeduCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2020-02-16T23:37:37.1271185+07:00 0HLTIVPQINOMU:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2020-02-16T23:37:37.1695933+07:00 0HLTIVPQINOMU:00000002 [INF] Executed DbCommand ("30"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2020-02-16T23:37:37.3024939+07:00 0HLTIVPQINOMU:00000002 [INF] Executed DbCommand ("49"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2020-02-16T23:37:37.3443554+07:00 0HLTIVPQINOMU:00000002 [INF] Executed DbCommand ("36"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2020-02-16T23:37:37.3841790+07:00 0HLTIVPQINOMU:00000002 [INF] Executed DbCommand ("33"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2020-02-16T23:37:37.4299398+07:00 0HLTIVPQINOMU:00000002 [INF] Executed DbCommand ("40"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2020-02-16T23:37:37.4528120+07:00 0HLTIVPQINOMU:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2020-02-16T23:37:37.4628070+07:00 0HLTIVPQINOMU:00000002 [INF] User logged in. (fdce0db4)
+2020-02-16T23:37:37.4950751+07:00 0HLTIVPQINOMU:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2020-02-16T23:37:37.6338243+07:00 0HLTIVPQINOMU:00000002 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" in 739.405ms (afa2e885)
+2020-02-16T23:37:37.6646261+07:00 0HLTIVPQINOMU:00000002 [INF] Request finished in 876.9302ms 200 application/json; charset=utf-8 (791a596a)
+2020-02-16T23:37:37.6797390+07:00 0HLTIVPQINOMU:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:56852/Admin/Home/Index   (ca22a1cb)
+2020-02-16T23:37:37.6852017+07:00 0HLTIVPQINOMU:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2020-02-16T23:37:37.7228812+07:00 0HLTIVPQINOMU:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2020-02-16T23:37:37.7920178+07:00 0HLTIVPQINOMU:00000003 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2020-02-16T23:37:38.1619578+07:00 0HLTIVPQINOMU:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2020-02-16T23:37:38.3993444+07:00 0HLTIVPQINOMU:00000003 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" in 707.6411ms (afa2e885)
+2020-02-16T23:37:38.4107007+07:00 0HLTIVPQINOMU:00000003 [INF] Request finished in 726.6593ms 200 text/html; charset=utf-8 (791a596a)
